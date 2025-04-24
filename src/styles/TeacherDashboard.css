@@ -1,0 +1,205 @@
+.teacher-dashboard {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background: #2C3E50;
+  color: white;
+  padding: 20px;
+  height: 100vh; /* Sidebar should fill the full height */
+    position: fixed; /* Keeps it fixed while scrolling */
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main Content */
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+  background: #F4F6F8;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+/* Your Courses Section */
+.course-management {
+    margin-top: 20px;
+  }
+  
+  .course-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .course-box {
+    width: 220px; /* Adjusted width */
+    height: 100px; /* Increased height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Colors for "Your Courses" */
+  .course-box.orange {
+    background: linear-gradient(to right, #FF9F43, #FF6B6B); 
+  }
+  
+  .course-box.blue {
+    background: linear-gradient(135deg, #1E90FF, #87CEFA);
+  }
+  
+  .course-box.yellow {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+  }
+  
+/* Grade Assignments Section */
+.grade-assignments {
+    margin-top: 20px; /* Align to the left */
+    padding-left: 20px; /* Adjust left padding if needed */
+  }
+  
+  /* Assignment Box - Smaller & Left-Aligned */
+  .assignment-box {
+    background: white;
+    padding: 8px 16px; /* Reduce padding */
+    width: 250px; /* Smaller width */
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  
+  
+  /* Colored Top Line */
+  .assignment-header {
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: linear-gradient(to right, #FF9F43, #FF6B6B);
+  }
+  
+/* Mark Attendance - Left Aligned */
+.mark-attendance {
+  margin-top: 20px;
+}
+
+.attendance-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.left-align {
+  justify-content: flex-start;
+}
+
+.attendance-box {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 180px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  position: relative;
+}
+
+.attendance-box.orange { background: linear-gradient(to right, #FF9F43, #FF6B6B); }
+.attendance-box.blue { background: linear-gradient(to right, #45A3E5, #1E88E5); }
+  
+  /* Updated Right Sidebar */
+  .right-sidebar {
+    width: 250px;
+    padding: 20px;
+    background: #ECF0F1;
+  }
+  
+  /* Updated Upcoming Lectures Styling */
+  .lecture-container {
+    margin-top: 10px;
+  }
+  
+  .lecture-box {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    position: relative; /* Ensures relative positioning */
+    overflow: hidden; /* Keeps the color bar within the box */
+  }
+  
+  .lecture-header {
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .lecture-header.orange {
+    background: linear-gradient(to right, #FF9F43, #FF6B6B);
+  }
+  
+  .lecture-header.blue {
+    background: linear-gradient(to right, #45A3E5, #1E88E5);
+  }
+  
+  .lecture-content {
+    padding-top: 15px; /* Push text below the color bar */
+  }
+  
+  /* Updated Notifications */
+  .notifications {
+    margin-top: 20px;
+  }
+  
+  .notification-box {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+  }
+  

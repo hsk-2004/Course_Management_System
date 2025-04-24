@@ -1,0 +1,36 @@
+.course-container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-container h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.course-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.course-container button {
+    width: 100%;
+    padding: 10px;
+    background: #ff9800;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.course-container button:hover {
+    background: #e68900;
+}

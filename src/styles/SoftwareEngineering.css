@@ -1,0 +1,127 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E5E5E5;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flex layout for proper positioning */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background: #2C3E50;
+    color: white;
+    padding: 20px;
+    height: 100vh; /* Full height */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+.main-content {
+    margin-left: 270px; /* Space for the fixed sidebar */
+    flex: 1;
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: #3A3A3A;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout for Content Boxes */
+.content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.assignment-box, .action-box {
+    background: linear-gradient(135deg, #FFD700, #FFA500); 
+    border-radius: 12px;
+    width: 235px;
+    padding: 20px;
+    color: #3A3A3A;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.assignment-box:hover, .action-box:hover {
+    transform: scale(1.05);
+}
+
+.assignment-box:nth-child(2) {
+    background: linear-gradient(135deg, #FFA500, #FF8C00);
+}
+
+.assignment-box:nth-child(3) {
+    background: linear-gradient(135deg, #FFA500, #FF4500);
+}
+
+.assignment-box:nth-child(4) {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+}
+
+.action-box {
+    background: linear-gradient(135deg, #00BFFF, #1E90FF);
+}
+
+.link-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #3A3A3A;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.link-button:hover {
+    background-color: #555;
+}
+
+.return-home {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    color: #1E90FF;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.return-home:hover {
+    text-decoration: underline;
+}
